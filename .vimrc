@@ -1,1 +1,1 @@
-/home/marlinf/.vim/vimrc
+.vim/vimrc
