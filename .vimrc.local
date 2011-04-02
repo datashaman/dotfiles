@@ -1,7 +1,4 @@
-" source /usr/local/lib/python2.6/dist-packages/ropevim-0.3_rc-py2.6.egg/ropevim.vim
-" let ropevim_vim_complete=1
-" let ropevim_extended_complete=1
-" color cleanphp
+color solarized
 set nocompatible
 set tabstop=4
 set shiftwidth=4
