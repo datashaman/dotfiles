@@ -1,5 +1,7 @@
-color solarized
 set nocompatible
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
+set smartindent
+source /home/marlinf/Programs/rope.vim
