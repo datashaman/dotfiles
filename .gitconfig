@@ -2,7 +2,6 @@
   name = Marlin Forbes
   email = marlinf@datashaman.com
 
-
 [alias]
   browse       = !hub browse
   w            = !hub browse
@@ -27,7 +26,6 @@
   st           = status
   sa           = status -sb --ignore-submodules=untracked
 
-
 [core]
   filemode = true
   logallrefupdates = true
@@ -50,7 +48,7 @@
   smtpserver = smtp.gmail.com
   smtpserverport = 587
   smtpencryption = tls
-  smtpuser = rtomayko@gmail.com
+  smtpuser = marlinf@datashaman.com
 
 [color]
   ui = auto
