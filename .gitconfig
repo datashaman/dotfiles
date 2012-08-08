@@ -1,6 +1,6 @@
 [user]
-	name = Marlin Forbes
-	email = marlinf@careerjunction.co.za
+  name = Marlin Forbes
+  email = marlinf@datashaman.com
 
 
 [alias]
@@ -71,4 +71,3 @@
   added = yellow
   changed = green bold
   untracked = blue bold
-
