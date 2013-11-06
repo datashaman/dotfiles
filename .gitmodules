@@ -13,3 +13,9 @@
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule ".vim/bundle/vim-autotag"]
+	path = .vim/bundle/vim-autotag
+	url = https://github.com/craigemery/vim-autotag
+[submodule "/home/marlinf/.vim/bundle/vundle"]
+	path = /home/marlinf/.vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git
