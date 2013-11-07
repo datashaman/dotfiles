@@ -93,6 +93,10 @@ alias f='find . -name'
 alias v='vim'
 alias lst='ls -lt|head'
 alias ack='ack-grep'
+alias t='todo.sh'
+alias vim='gvim'
+alias vi='gvim'
+alias v='gvim'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -113,3 +117,24 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+function vit() {
+    dirname=`dirname $1`
+    basename=`basename $1 .php`
+    vim -p tests/$dirname/${basename}Test.php $1 tests/_files/${basename}.xml
+}
+
+function vin() {
+    FILE=`echo $1 | cut -d':' -f1`
+    LINE=`echo $1 | cut -d':' -f2`
+    vim +$LINE $FILE
+}
+
+function vack() {
+    vin `ack-grep $*`
+}
+
+export TODOTXT_DEFAULT_ACTION=ls
+
+# Needed for bash completion for todo.txt
+complete -F _todo t

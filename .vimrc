@@ -1,7 +1,21 @@
 set nocompatible
+filetype off
 
-call pathogen#helptags()
-call pathogen#infect()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+Bundle 'vim-scripts/Gist.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'craigemery/vim-autotag'
+Bundle 'tpope/vim-fugitive'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'pangloss/vim-javascript'
+Bundle 'brookhong/DBGPavim'
+" Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
 
@@ -12,6 +26,12 @@ let mapleader=","
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" xdebug
+let g:dbgPavimPort=9009
+let g:dbgPavimBreakAtEntry=0
+
+set mouse=a
+set cursorline cursorcolumn
 set hidden
 set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
@@ -19,7 +39,7 @@ set expandtab     " replace tabs with equivalent spaces
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
-set number        " always show line numbers
+" set number        " always show line numbers
 set shiftwidth=4  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set showmatch     " set show matching parenthesis
@@ -41,7 +61,7 @@ set nobackup
 set noswapfile
 
 if &t_Co >= 256 || has("gui_running")
-	colorscheme mustang
+	colorscheme github
 endif
 
 if &t_Co > 2 || has("gui_running")
@@ -49,10 +69,9 @@ if &t_Co > 2 || has("gui_running")
 	syntax on
 endif
 
-set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:.
-
-autocmd filetype html,xml set listchars-=tab:>.
+" set list
+" set listchars=tab:>.,trail:.,extends:#,nbsp:.
+" autocmd filetype html,xml set listchars-=tab:>.
 
 " Paste mode
 set pastetoggle=<F2>
