@@ -72,5 +72,8 @@
     added = yellow
     changed = green bold
     untracked = blue bold
+
 [push]
 	default = matching
+[web]
+	browser = chromium-browser
