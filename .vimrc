@@ -8,13 +8,27 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
-Bundle 'vim-scripts/Gist.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'craigemery/vim-autotag'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
 Bundle 'brookhong/DBGPavim'
+Bundle 'Shougo/neocomplcache'
+Bundle 'tpope/vim-vinegar'
+Bundle 'YankRing.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mru.vim'
+Bundle 'taglist.vim'
+Bundle 'bling/vim-airline'
+Bundle 'mattn/emmet-vim'
+Bundle 'Syntastic'
+Bundle 'davidoc/todo.txt-vim'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+
 " Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
