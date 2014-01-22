@@ -94,9 +94,6 @@ alias v='vim'
 alias lst='ls -lt|head'
 alias ack='ack-grep'
 alias t='todo.sh'
-alias vim='gvim'
-alias vi='gvim'
-alias v='gvim'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -138,3 +135,7 @@ export TODOTXT_DEFAULT_ACTION=ls
 
 # Needed for bash completion for todo.txt
 complete -F _todo t
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+xset r rate 250 70

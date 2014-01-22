@@ -28,7 +28,7 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
-
+Bundle 'evidens/vim-twig'
 " Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
@@ -41,7 +41,7 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " xdebug
-let g:dbgPavimPort=9009
+let g:dbgPavimPort=9000
 let g:dbgPavimBreakAtEntry=0
 
 set mouse=a

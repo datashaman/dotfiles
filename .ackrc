@@ -1,2 +1,29 @@
---type-set
-coffee=.coffee
+# General Ack Settings
+# ####################################################################
+
+# only search with case sensitivity if there is mixed case
+--smart-case
+# follow symlinks
+--follow
+# always sort the files
+--sort-files
+# always color, even if piping to a another program
+#--color
+# no grouping
+--noheading
+--break
+# always use a PAGER
+# --pager=less
+# always print filename prefix
+--with-filename
+
+# Custom File-Types
+# ####################################################################
+--type-set=markdown=.md,.mkd,.markdown
+--type-set=css=.css,.scss
+--type-set=coffee=.coffee
+
+# Colors
+# ####################################################################
+--color-filename=cyan
+--color-match=white on_green bold

@@ -78,3 +78,5 @@
 
 [web]
 	browser = chromium-browser
+[merge]
+	tool = meld
