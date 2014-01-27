@@ -1,2 +1,2 @@
-.viminfo
-.vim/bundle
+home/.vim/bundle
+!home/.vim/bundle/vundle
