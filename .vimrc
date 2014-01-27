@@ -29,6 +29,9 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 Bundle 'evidens/vim-twig'
+Bundle 'zenorocha/dracula-theme'
+Bundle 'wesleyche/SrcExpl'
+Bundle 'wesleyche/Trinity'
 " Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
@@ -75,7 +78,7 @@ set nobackup
 set noswapfile
 
 if &t_Co >= 256 || has("gui_running")
-	colorscheme github
+	colorscheme dracula
 endif
 
 if &t_Co > 2 || has("gui_running")
@@ -98,3 +101,15 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " Sudo within vim!
 cmap w!! w !sudo tee % >/dev/null
+
+" Open and close all the three plugins on the same time 
+nmap <F8>   :TrinityToggleAll<CR> 
+
+" Open and close the srcexpl.vim separately 
+nmap <F9>   :TrinityToggleSourceExplorer<CR> 
+
+" Open and close the taglist.vim separately 
+nmap <F10>  :TrinityToggleTagList<CR> 
+
+" Open and close the NERD_tree.vim separately 
+nmap <F11>  :TrinityToggleNERDTree<CR> 
