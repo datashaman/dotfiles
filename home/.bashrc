@@ -135,6 +135,8 @@ export TODOTXT_DEFAULT_ACTION=ls
 
 # Needed for bash completion for todo.txt
 complete -F _todo t
+
+export EDITOR=vim
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
