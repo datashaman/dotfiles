@@ -32,6 +32,9 @@ Bundle 'evidens/vim-twig'
 Bundle 'zenorocha/dracula-theme'
 Bundle 'wesleyche/SrcExpl'
 Bundle 'wesleyche/Trinity'
+Bundle 'vimoutliner/vimoutliner'
+Bundle 'xsbeats/vim-blade'
+Bundle 'ardagnir/united-front'
 " Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
@@ -78,7 +81,7 @@ set nobackup
 set noswapfile
 
 if &t_Co >= 256 || has("gui_running")
-	colorscheme dracula
+	colorscheme desert
 endif
 
 if &t_Co > 2 || has("gui_running")

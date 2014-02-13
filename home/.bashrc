@@ -85,15 +85,15 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 # alias l='ls -CF'
-alias lt='ll -t'
 alias df='df -h'
 alias du='du -h'
 alias g='ack-grep -a'
 alias f='find . -name'
-alias v='vim'
 alias lst='ls -lt|head'
 alias ack='ack-grep'
 alias t='todo.sh'
+alias vim="vim --servername datashaman"
+alias gvim="gvim --servername datashaman"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -139,5 +139,3 @@ complete -F _todo t
 export EDITOR=vim
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-xset r rate 250 70
