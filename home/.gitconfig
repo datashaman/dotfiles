@@ -33,6 +33,7 @@
     filemode = true
     logallrefupdates = true
     whitespace = trailing-space, tab-in-indent, tabwidth=4
+	autocrlf = input
 
 [apply]
     whitespace = error
