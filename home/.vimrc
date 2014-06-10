@@ -1,42 +1,43 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'scrooloose/nerdtree'
+Plugin 'craigemery/vim-autotag'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
+Plugin 'brookhong/DBGPavim'
+Plugin 'Shougo/neocomplcache'
+Plugin 'tpope/vim-vinegar'
+Plugin 'YankRing.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mru.vim'
+Plugin 'taglist.vim'
+Plugin 'bling/vim-airline'
+Plugin 'mattn/emmet-vim'
+Plugin 'Syntastic'
+Plugin 'davidoc/todo.txt-vim'
+Plugin "MarcWeber/vim-addon-mw-utils"
+Plugin "tomtom/tlib_vim"
+Plugin "garbas/vim-snipmate"
+Plugin "honza/vim-snippets"
+Plugin 'evidens/vim-twig'
+Plugin 'zenorocha/dracula-theme'
+Plugin 'wesleyche/SrcExpl'
+Plugin 'wesleyche/Trinity'
+Plugin 'vimoutliner/vimoutliner'
+Plugin 'xsbeats/vim-blade'
+Plugin 'ardagnir/united-front'
+" Plugin 'Valloric/YouCompleteMe'
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'craigemery/vim-autotag'
-Bundle 'tpope/vim-fugitive'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'pangloss/vim-javascript'
-Bundle 'brookhong/DBGPavim'
-Bundle 'Shougo/neocomplcache'
-Bundle 'tpope/vim-vinegar'
-Bundle 'YankRing.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mru.vim'
-Bundle 'taglist.vim'
-Bundle 'bling/vim-airline'
-Bundle 'mattn/emmet-vim'
-Bundle 'Syntastic'
-Bundle 'davidoc/todo.txt-vim'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
-Bundle 'evidens/vim-twig'
-Bundle 'zenorocha/dracula-theme'
-Bundle 'wesleyche/SrcExpl'
-Bundle 'wesleyche/Trinity'
-Bundle 'vimoutliner/vimoutliner'
-Bundle 'xsbeats/vim-blade'
-Bundle 'ardagnir/united-front'
-" Bundle 'Valloric/YouCompleteMe'
-
+call vundle#end()
 filetype plugin indent on
 
 " change the mapleader from \ to ,
