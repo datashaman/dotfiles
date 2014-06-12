@@ -8,31 +8,28 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'craigemery/vim-autotag'
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'craigemery/vim-autotag'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
-Bundle 'brookhong/DBGPavim'
-Bundle 'Shougo/neocomplcache'
-Bundle 'tpope/vim-vinegar'
-Bundle 'YankRing.vim'
+" Bundle 'brookhong/DBGPavim'
+" Bundle 'Shougo/neocomplcache'
+" Bundle 'tpope/vim-vinegar'
 Bundle 'kien/ctrlp.vim'
-Bundle 'mru.vim'
-Bundle 'taglist.vim'
-Bundle 'bling/vim-airline'
+" Bundle 'mru.vim'
+" Bundle 'taglist.vim'
+" Bundle 'bling/vim-airline'
 Bundle 'mattn/emmet-vim'
 Bundle 'Syntastic'
-Bundle 'davidoc/todo.txt-vim'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
-Bundle 'evidens/vim-twig'
-Bundle 'zenorocha/dracula-theme'
+" Bundle 'davidoc/todo.txt-vim'
+" Bundle "MarcWeber/vim-addon-mw-utils"
+" Bundle "tomtom/tlib_vim"
+" Bundle "garbas/vim-snipmate"
+" Bundle "honza/vim-snippets"
+" Bundle 'zenorocha/dracula-theme'
 Bundle 'wesleyche/SrcExpl'
 Bundle 'wesleyche/Trinity'
-Bundle 'vimoutliner/vimoutliner'
 Bundle 'xsbeats/vim-blade'
 Bundle 'ardagnir/united-front'
 " Bundle 'Valloric/YouCompleteMe'

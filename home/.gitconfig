@@ -10,6 +10,7 @@
     w            = !hub browse
     compare      = !hub compare
     cb           = !git-cut-branch
+    cp           = !git-cherry-pick
     sh           = !git-sh
     grab         = !git-grab
     thanks       = !git-thanks
@@ -79,5 +80,6 @@
 
 [web]
 	browser = chromium-browser
+
 [merge]
 	tool = meld

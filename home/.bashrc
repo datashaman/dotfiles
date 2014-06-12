@@ -139,3 +139,5 @@ complete -F _todo t
 export EDITOR=vim
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+export PATH="vendor/bin:/usr/local/heroku/bin:$PATH"
