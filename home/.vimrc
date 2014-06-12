@@ -6,7 +6,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 
 " Bundle 'scrooloose/nerdtree'
 " Bundle 'craigemery/vim-autotag'
@@ -28,8 +28,8 @@ Bundle 'Syntastic'
 " Bundle "garbas/vim-snipmate"
 " Bundle "honza/vim-snippets"
 " Bundle 'zenorocha/dracula-theme'
-Bundle 'wesleyche/SrcExpl'
-Bundle 'wesleyche/Trinity'
+" Bundle 'wesleyche/SrcExpl'
+" Bundle 'wesleyche/Trinity'
 Bundle 'xsbeats/vim-blade'
 Bundle 'ardagnir/united-front'
 " Bundle 'Valloric/YouCompleteMe'
