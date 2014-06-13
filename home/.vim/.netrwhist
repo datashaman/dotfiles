@@ -1,2 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/marlinf/Projects/diamond/workbench/datashaman/diamond/src'
+let g:netrw_dirhist_2='/home/marlinf/Projects/diamond/workbench/datashaman/diamond'
+let g:netrw_dirhist_3='/home/marlinf/Projects/diamond/workbench/datashaman/diamond/src'
+let g:netrw_dirhist_4='/home/marlinf/Projects/diamond/workbench/datashaman/diamond/src/Datashaman'
+let g:netrw_dirhist_5='/home/marlinf/Projects/diamond/workbench/datashaman/diamond/src'
+let g:netrw_dirhist_6='/home/marlinf/Projects/diamond/workbench/datashaman/diamond'
+let g:netrw_dirhist_7='/home/marlinf/Projects/diamond/workbench/datashaman/diamond/src'
+let g:netrw_dirhist_8='/home/marlinf/Projects/diamond/workbench/datashaman/diamond/src/DataShaman'
+let g:netrw_dirhist_9='/home/marlinf/Projects/diamond/workbench/datashaman/diamond/src/DataShaman/Diamond'

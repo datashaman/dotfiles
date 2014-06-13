@@ -34,6 +34,7 @@ Bundle 'xsbeats/vim-blade'
 Bundle 'ardagnir/united-front'
 " Bundle 'Valloric/YouCompleteMe'
 
+call vundle#end()
 filetype plugin indent on
 
 " change the mapleader from \ to ,
