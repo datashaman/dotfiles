@@ -92,8 +92,9 @@ alias f='find . -name'
 alias lst='ls -lt|head'
 alias ack='ack-grep'
 alias t='todo.sh'
-alias vim="vim --servername datashaman"
-alias gvim="gvim --servername datashaman"
+alias vi="/usr/bin/vim --servername datashaman"
+alias vim="/usr/bin/vim --servername datashaman"
+alias gvim="/usr/bin/gvim --servername datashaman"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
