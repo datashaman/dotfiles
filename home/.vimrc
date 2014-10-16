@@ -32,6 +32,7 @@ Plugin 'wesleyche/SrcExpl'
 Plugin 'wesleyche/Trinity'
 Plugin 'xsbeats/vim-blade'
 Plugin 'ardagnir/united-front'
+Plugin 'editorconfig/editorconfig-vim'
 " Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
