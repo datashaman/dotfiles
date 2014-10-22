@@ -34,9 +34,10 @@ Plugin 'xsbeats/vim-blade'
 Plugin 'ardagnir/united-front'
 Plugin 'editorconfig/editorconfig-vim'
 " Plugin 'Valloric/YouCompleteMe'
+Plugin 'raichoo/purescript-vim'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+
+call vundle#end()
 
 filetype plugin indent on
 
@@ -117,6 +118,3 @@ nmap <F10>  :TrinityToggleTagList<CR>
 
 " Open and close the NERD_tree.vim separately 
 nmap <F11>  :TrinityToggleNERDTree<CR> 
-
-let g:dbgPavimPort = 9009
-let g:dbgPavimBreakAtEntry = 0
