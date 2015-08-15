@@ -145,5 +145,6 @@ export PATH="$HOME/.cabal/bin:/opt/haxe:/opt/idea/bin:/opt/dart:/opt/dart/dart-s
 export HAXE_STD_PATH=/opt/haxe/std
 
 eval "$(rbenv init -)"
+source ~/.nvm/nvm.sh
 
 xset s noexpose
