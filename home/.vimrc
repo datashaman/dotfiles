@@ -13,7 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
-Plugin 'brookhong/DBGPavim'
+" Plugin 'brookhong/DBGPavim'
 " Plugin 'Shougo/neocomplcache'
 " Plugin 'tpope/vim-vinegar'
 Plugin 'kien/ctrlp.vim'
@@ -28,13 +28,13 @@ Plugin 'Syntastic'
 " Plugin "garbas/vim-snipmate"
 " Plugin "honza/vim-snippets"
 " Plugin 'zenorocha/dracula-theme'
-Plugin 'wesleyche/SrcExpl'
-Plugin 'wesleyche/Trinity'
+" Plugin 'wesleyche/SrcExpl'
+" Plugin 'wesleyche/Trinity'
 Plugin 'xsbeats/vim-blade'
 Plugin 'ardagnir/united-front'
 Plugin 'editorconfig/editorconfig-vim'
 " Plugin 'Valloric/YouCompleteMe'
-Plugin 'raichoo/purescript-vim'
+" Plugin 'raichoo/purescript-vim'
 
 
 call vundle#end()
