@@ -78,8 +78,14 @@
 [push]
 	default = matching
 
+[pull]
+	default = matching
+
 [web]
 	browser = chromium-browser
 
 [merge]
 	tool = meld
+
+[rebase]
+    autoSquash = true

@@ -140,7 +140,7 @@ complete -F _todo t
 export EDITOR=vim
 export ANDROID_SDK_ROOT=/opt/android-sdk-linux
 export ANDROID_NDK_ROOT=/opt/android-ndk-r10
-export PATH="$HOME/.cabal/bin:/opt/haxe:/opt/idea/bin:/opt/dart:/opt/dart/dart-sdk/bin:/opt/android-sdk-linux/tools:$HOME/.rbenv/bin:$HOME/bin:vendor/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$HOME/bin:vendor/bin:node_modules/.bin:$PATH"
 
 export HAXE_STD_PATH=/opt/haxe/std
 
