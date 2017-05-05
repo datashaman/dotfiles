@@ -76,7 +76,7 @@
     untracked = blue bold
 
 [push]
-	default = matching
+	default = current
 
 [pull]
 	default = matching
@@ -89,3 +89,5 @@
 
 [rebase]
     autoSquash = true
+[rerere]
+	enabled = true

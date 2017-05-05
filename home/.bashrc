@@ -148,3 +148,4 @@ eval "$(rbenv init -)"
 source ~/.nvm/nvm.sh
 
 xset s noexpose
+export PATH=$HOME/.config/composer/vendor/bin:$PATH

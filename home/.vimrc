@@ -8,6 +8,7 @@ call vundle#begin()
 " required!
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'vim-scripts/pylint.vim'
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'craigemery/vim-autotag'
 Plugin 'tpope/vim-fugitive'
@@ -35,6 +36,7 @@ Plugin 'ardagnir/united-front'
 Plugin 'editorconfig/editorconfig-vim'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'raichoo/purescript-vim'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 
 call vundle#end()
@@ -51,6 +53,10 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " xdebug
 let g:dbgPavimPort=9000
 let g:dbgPavimBreakAtEntry=0
+
+set laststatus=2 " Always display the statusline in all windows
+set showtabline=2 " Always display the tabline, even if there is only one tab
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
 set mouse=a
 set cursorline cursorcolumn

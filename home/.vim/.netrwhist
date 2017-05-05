@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/marlinf/Projects/sokoso/resources/views/emails/auth'
-let g:netrw_dirhist_2='/home/marlinf/Projects/sokoso/resources/views/store_pages'
-let g:netrw_dirhist_3='/home/marlinf/Projects/sokoso-ops/fabric/telegraf.d'
-let g:netrw_dirhist_4='/home/marlinf/Projects/sokoso/app/Http/Middleware'
-let g:netrw_dirhist_5='/home/marlinf/Projects/sokoso/app/Http/Controllers/Auth'
-let g:netrw_dirhist_6='/home/marlinf/Projects/sonarr/osx/Sonarr.app'
-let g:netrw_dirhist_7='/home/marlinf/Projects/sonarr/osx/Sonarr.app/Contents'
-let g:netrw_dirhist_8='/home/marlinf/Projects/sonarr/osx/Sonarr.app/Contents/Resources'
-let g:netrw_dirhist_9='/home/marlinf/Projects/sonarr/osx/Sonarr.app'
+let g:netrw_dirhist_cnt =0
