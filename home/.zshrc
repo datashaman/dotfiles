@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim="vim --servername datashaman"
 
-. $HOME/.vim/bundle/powerline/powerline/bindings/zsh/powerline.zsh
+. $HOME/.vim/plugged/powerline/powerline/bindings/zsh/powerline.zsh
 . $HOME/.autoenv/activate.sh
 export PATH=/opt/android/tools:$HOME/.local/bin:$HOME/.composer/vendor/bin:$HOME/.config/composer/bin:$PATH
 
