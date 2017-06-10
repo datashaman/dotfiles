@@ -10,6 +10,7 @@
     bgD          = !git branch -vv | grep ' gone' | cut -d' ' -f3 | xargs git branch -D
     browse       = !hub browse
     bv           = !git branch --color -v
+    bvv          = !git branch --color -vv
     cb           = !git-cut-branch
     ci           = commit
     compare      = !hub compare
@@ -17,10 +18,10 @@
     fp           = format-patch --stdout
     grab         = !git-grab
     incoming     = !git-whatchanged ..origin
-    in           = !git-incoming
+    in           = !git-whatchanged ..origin
     ll           = log --pretty=oneline --abbrev-commit --max-count=15
-    out          = !git-outgoing
-    outgoing     = !git-outgoing
+    out          = !git-whatchanged origin..
+    outgoing     = !git-whatchanged origin..
     rup          = remote update -p
     sa           = status -sb --ignore-submodules=untracked
     sh           = !git-sh
