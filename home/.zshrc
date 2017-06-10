@@ -85,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vim="vim --servername datashaman"
+alias vi="vim --servername datashaman"
 
 . $HOME/.vim/plugged/powerline/powerline/bindings/zsh/powerline.zsh
 . $HOME/.autoenv/activate.sh
