@@ -6,6 +6,7 @@
     # email = marlin.forbes@mrd.com
 
 [alias]
+    alias        = config --get-regexp ^alias\\.
     bgd          = !git branch -vv | grep ' gone' | cut -d' ' -f3 | xargs git branch -d
     bgD          = !git branch -vv | grep ' gone' | cut -d' ' -f3 | xargs git branch -D
     browse       = !hub browse
