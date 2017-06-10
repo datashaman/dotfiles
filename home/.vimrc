@@ -1,45 +1,39 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle
-" required!
-Plugin 'gmarik/Vundle.vim'
+Plug 'vim-scripts/pylint.vim'
+" Plug 'scrooloose/nerdtree'
+" Plug 'craigemery/vim-autotag'
+Plug 'tpope/vim-fugitive'
+Plug 'kchmck/vim-coffee-script'
+Plug 'pangloss/vim-javascript'
+" Plug 'brookhong/DBGPavim'
+" Plug 'Shougo/neocomplcache'
+" Plug 'tpope/vim-vinegar'
+Plug 'kien/ctrlp.vim'
+" Plug 'mru.vim'
+" Plug 'taglist.vim'
+" Plug 'bling/vim-airline'
+Plug 'mattn/emmet-vim'
+Plug 'vim-syntastic/syntastic'
+" Plug 'davidoc/todo.txt-vim'
+" Plug "MarcWeber/vim-addon-mw-utils"
+" Plug "tomtom/tlib_vim"
+" Plug "garbas/vim-snipmate"
+" Plug "honza/vim-snippets"
+" Plug 'zenorocha/dracula-theme'
+" Plug 'wesleyche/SrcExpl'
+" Plug 'wesleyche/Trinity'
+Plug 'xsbeats/vim-blade'
+Plug 'ardagnir/united-front'
+Plug 'editorconfig/editorconfig-vim'
+" Plug 'Valloric/YouCompleteMe'
+" Plug 'raichoo/purescript-vim'
+Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
-Plugin 'vim-scripts/pylint.vim'
-" Plugin 'scrooloose/nerdtree'
-" Plugin 'craigemery/vim-autotag'
-Plugin 'tpope/vim-fugitive'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'pangloss/vim-javascript'
-" Plugin 'brookhong/DBGPavim'
-" Plugin 'Shougo/neocomplcache'
-" Plugin 'tpope/vim-vinegar'
-Plugin 'kien/ctrlp.vim'
-" Plugin 'mru.vim'
-" Plugin 'taglist.vim'
-" Plugin 'bling/vim-airline'
-Plugin 'mattn/emmet-vim'
-Plugin 'Syntastic'
-" Plugin 'davidoc/todo.txt-vim'
-" Plugin "MarcWeber/vim-addon-mw-utils"
-" Plugin "tomtom/tlib_vim"
-" Plugin "garbas/vim-snipmate"
-" Plugin "honza/vim-snippets"
-" Plugin 'zenorocha/dracula-theme'
-" Plugin 'wesleyche/SrcExpl'
-" Plugin 'wesleyche/Trinity'
-Plugin 'xsbeats/vim-blade'
-Plugin 'ardagnir/united-front'
-Plugin 'editorconfig/editorconfig-vim'
-" Plugin 'Valloric/YouCompleteMe'
-" Plugin 'raichoo/purescript-vim'
-Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-
-call vundle#end()
+call plug#end()
 
 filetype plugin indent on
 

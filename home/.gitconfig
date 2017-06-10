@@ -6,29 +6,32 @@
     # email = marlin.forbes@mrd.com
 
 [alias]
+    bgd          = !git branch -vv | grep ' gone' | cut -d' ' -f3 | xargs git branch -d
+    bgD          = !git branch -vv | grep ' gone' | cut -d' ' -f3 | xargs git branch -D
     browse       = !hub browse
-    w            = !hub browse
-    compare      = !hub compare
+    bv           = !git branch --color -v
     cb           = !git-cut-branch
-    cp           = !git-cherry-pick
-    sh           = !git-sh
-    grab         = !git-grab
-    thanks       = !git-thanks
-    track        = !git-track
-    ll           = log --pretty=oneline --abbrev-commit --max-count=15
-    wip          = !git add -u && git commit -m ...
-    wipc         = !date >> WIP && git add WIP && git commit -m ...
-    fp           = format-patch --stdout
     ci           = commit
-    x            = checkout HEAD
-    bv           = !git branch --color -v | cut -c1-100
-    incoming     = !git-incoming
+    compare      = !hub compare
+    cp           = !git-cherry-pick
+    fp           = format-patch --stdout
+    grab         = !git-grab
+    incoming     = !git-whatchanged ..origin
     in           = !git-incoming
-    outgoing     = !git-outgoing
+    ll           = log --pretty=oneline --abbrev-commit --max-count=15
     out          = !git-outgoing
+    outgoing     = !git-outgoing
+    rup          = remote update -p
+    sa           = status -sb --ignore-submodules=untracked
+    sh           = !git-sh
     s            = status -sb -uno --ignore-submodules=untracked
     st           = status
-    sa           = status -sb --ignore-submodules=untracked
+    thanks       = !git-thanks
+    track        = !git-track
+    w            = !hub browse
+    wipc         = !date >> WIP && git add WIP && git commit -m ...
+    wip          = !git add -u && git commit -m ...
+    x            = checkout HEAD
 
 [core]
     filemode = true

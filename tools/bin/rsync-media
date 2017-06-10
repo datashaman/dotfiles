@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+DRIVE=`pwd`
+cd /run/user/1000/gvfs/smb-share:server=media.local,share=public &&
+rsync -a --progress --size-only \
+    --exclude 'Series/Doctor Who (2005)/Season [1-8]' --delete-excluded --delete \
+    --max-size=4g Comedy Downloads Movies Music Series "${DRIVE}"

@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#
+# Usage:
+#     transcode filename [filename...]
+#
+# Video: anything -> x264
+# Audio: copy
+# Output: .mp4 alongside the source file(s)
+# 
+# I live here: https://gist.github.com/datashaman/6866879e4ad07b0483e6efd9ea49d8a2
+#
+trap 'exit -1' INT
+BINARY=ffmpeg
+PRESET=slow
+CRF=23
+for INPUT in "$@"
+do
+    DIRNAME=$(dirname "${INPUT}")
+    BASENAME=$(basename "${INPUT}")
+    # EXTENSION="${BASENAME##*.}"
+    FILENAME="${BASENAME%.*}"
+    OUTPUT="${DIRNAME}/${FILENAME}.mp4"
+    $BINARY -i "${INPUT}" -c:v libx264 -preset ${PRESET} -crf ${CRF} -c:a copy "${OUTPUT}"
+done
