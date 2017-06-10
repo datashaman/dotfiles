@@ -19,7 +19,7 @@
     grab         = !git-grab
     incoming     = !git-whatchanged ..origin
     in           = !git-whatchanged ..origin
-    ll           = log --pretty=oneline --abbrev-commit --max-count=15
+    ll           = log --pretty=oneline --abbrev-commit --max-count=15 --decorate
     out          = !git-whatchanged origin..
     outgoing     = !git-whatchanged origin..
     rup          = remote update -p
