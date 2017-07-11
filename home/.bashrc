@@ -149,3 +149,6 @@ source ~/.nvm/nvm.sh
 
 xset s noexpose
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
+
+# added by Anaconda3 4.4.0 installer
+export PATH="/home/marlinf/anaconda3/bin:$PATH"

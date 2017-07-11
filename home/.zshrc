@@ -99,3 +99,6 @@ export NVM_DIR="/home/marlinf/.nvm"
 # For Android SDK
 export USE_CCACHE=1
 export ANDROID_HOME=/opt/android
+
+# added by Anaconda3 4.4.0 installer
+export PATH="/home/marlinf/anaconda3/bin:$PATH"

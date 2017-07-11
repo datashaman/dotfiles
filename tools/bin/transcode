@@ -3,22 +3,43 @@
 # Usage:
 #     transcode filename [filename...]
 #
-# Video: anything -> x264
-# Audio: copy
-# Output: .mp4 alongside the source file(s)
+# File type is determined using:
+#
+#   file --mime-type filename
+#
+# Audio files:
+#   Audio: anything -> 320kbps CBR MP3
+#   Output: .mp3 alongside the source file(s)
+#
+# Video files:
+#   Video: anything -> x264
+#   Audio: copy
+#   Output: .mp4 alongside the source file(s)
 # 
 # I live here: https://gist.github.com/datashaman/6866879e4ad07b0483e6efd9ea49d8a2
 #
 trap 'exit -1' INT
+
 BINARY=ffmpeg
-PRESET=slow
+BITRATE=320k
 CRF=23
+PRESET=slow
+
 for INPUT in "$@"
 do
+    MIME_TYPE=$(file -b --mime-type "${INPUT}")
     DIRNAME=$(dirname "${INPUT}")
     BASENAME=$(basename "${INPUT}")
     # EXTENSION="${BASENAME##*.}"
     FILENAME="${BASENAME%.*}"
-    OUTPUT="${DIRNAME}/${FILENAME}.mp4"
-    $BINARY -i "${INPUT}" -c:v libx264 -preset ${PRESET} -crf ${CRF} -c:a copy "${OUTPUT}"
+
+    echo $MIME_TYPE
+
+    if [[ $MIME_TYPE == audio* ]]; then
+        OUTPUT="${DIRNAME}/${FILENAME}.mp3"
+        $BINARY -i "${INPUT}" -vn -ab ${BITRATE} "${OUTPUT}"
+    else
+        OUTPUT="${DIRNAME}/${FILENAME}.mp4"
+        $BINARY -i "${INPUT}" -c:v libx264 -preset ${PRESET} -crf ${CRF} -c:a copy "${OUTPUT}"
+    fi
 done

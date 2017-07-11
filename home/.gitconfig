@@ -14,8 +14,10 @@
     bvv          = !git branch --color -vv
     cb           = !git-cut-branch
     ci           = commit
+    cm           = checkout master
     compare      = !hub compare
     cp           = !git-cherry-pick
+    create       = !sh -c 'git-checkout -b $1 origin/master' -
     fp           = format-patch --stdout
     grab         = !git-grab
     incoming     = !git-whatchanged ..origin
@@ -23,6 +25,7 @@
     ll           = log --pretty=oneline --abbrev-commit --max-count=15 --decorate
     out          = !git-whatchanged origin..
     outgoing     = !git-whatchanged origin..
+    rim          = rebase -i origin/master
     rup          = remote update -p
     sa           = status -sb --ignore-submodules=untracked
     sh           = !git-sh
