@@ -3,6 +3,7 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'frankier/vim-eve'
 Plug 'vim-scripts/pylint.vim'
 " Plug 'scrooloose/nerdtree'
 " Plug 'craigemery/vim-autotag'

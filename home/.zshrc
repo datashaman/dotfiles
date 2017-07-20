@@ -89,7 +89,7 @@ alias vi="vim --servername datashaman"
 
 . $HOME/.vim/plugged/powerline/powerline/bindings/zsh/powerline.zsh
 . $HOME/.autoenv/activate.sh
-export PATH=/opt/android/tools:$HOME/.local/bin:$HOME/.composer/vendor/bin:$HOME/.config/composer/bin:$PATH
+export PATH=/opt/android/tools:$HOME/.local/bin:$HOME/.composer/vendor/bin:$HOME/.config/composer/bin:node_modules/.bin:$PATH
 
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
