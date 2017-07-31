@@ -101,4 +101,4 @@ export USE_CCACHE=1
 export ANDROID_HOME=/opt/android
 
 # added by Anaconda3 4.4.0 installer
-export PATH="/home/marlinf/anaconda3/bin:$PATH"
+# export PATH="/home/marlinf/anaconda3/bin:$PATH"
