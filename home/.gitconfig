@@ -25,6 +25,8 @@
     ll           = log --pretty=oneline --abbrev-commit --max-count=15 --decorate
     out          = !git-whatchanged origin..
     outgoing     = !git-whatchanged origin..
+    pf           = push --force-with-lease
+    pud          = push -u datashaman
     rim          = rebase -i origin/master
     rup          = remote update -p
     sa           = status -sb --ignore-submodules=untracked
@@ -43,6 +45,7 @@
     logallrefupdates = true
     whitespace = trailing-space, tab-in-indent, tabwidth=4
 	autocrlf = input
+	pager = diff-so-fancy | less --tabs=4 -RFX
 
 [apply]
     whitespace = error
@@ -64,13 +67,15 @@
     smtpuser = marlinf@datashaman.com
 
 [color]
-    ui = auto
+	ui = true
 
 [color "diff"]
-    meta = blue bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+	meta = 227
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	commit = 227 bold
+	whitespace = red reverse
 
 [color "branch"]
     current = yellow reverse
@@ -99,3 +104,8 @@
     autoSquash = true
 [rerere]
 	enabled = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
