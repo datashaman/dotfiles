@@ -3,7 +3,7 @@ default:
 setup: setup-system setup-dotfiles
 
 setup-system:
-	sudo apt install stow zsh
+	sudo apt install stow zsh virtualenvwrapper
 
 setup-dotfiles:
 	stow home tools

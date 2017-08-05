@@ -89,6 +89,7 @@ alias vi="vim --servername datashaman"
 
 . $HOME/.vim/plugged/powerline/powerline/bindings/zsh/powerline.zsh
 . $HOME/.autoenv/activate.sh
+
 export PATH=/opt/android/tools:$HOME/.local/bin:$HOME/.composer/vendor/bin:$HOME/.config/composer/bin:node_modules/.bin:$PATH
 
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
@@ -97,8 +98,8 @@ export NVM_DIR="/home/marlinf/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # For Android SDK
-export USE_CCACHE=1
-export ANDROID_HOME=/opt/android
+# export USE_CCACHE=1
+# export ANDROID_HOME=/opt/android
 
 # added by Anaconda3 4.4.0 installer
 # export PATH="/home/marlinf/anaconda3/bin:$PATH"
