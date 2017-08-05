@@ -1,5 +1,7 @@
 default:
 
+setup: setup-system setup-dotfiles
+
 setup-system:
 	sudo apt install stow zsh
 
