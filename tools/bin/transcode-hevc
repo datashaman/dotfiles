@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+FOLDER=${1}
+
+find ${FOLDER} -iname '*.mkv' -print0 | xargs -0 -n1 find-hevc | xargs -0 -n1 transcode

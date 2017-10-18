@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+HEVC=0
+mkvinfo "${1}" | grep -q HEVC && HEVC=1
+
+if [[ ${HEVC} == 1 ]]; then
+    echo -en "${1}\x00"
+fi

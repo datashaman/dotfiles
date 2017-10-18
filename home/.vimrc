@@ -3,6 +3,7 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'wakatime/vim-wakatime'
 Plug 'frankier/vim-eve'
 Plug 'vim-scripts/pylint.vim'
 " Plug 'scrooloose/nerdtree'
@@ -54,7 +55,7 @@ set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
 set mouse=a
-set cursorline cursorcolumn
+" set cursorline cursorcolumn
 set hidden
 set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
