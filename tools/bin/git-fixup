@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+FIXUP=$(git cherry origin/master | head -1 | cut -d' ' -f2)
+
+if [[ -z "${FIXUP}" ]]; then
+    git commit $*
+else
+    git commit --fixup $FIXUP $*
+fi

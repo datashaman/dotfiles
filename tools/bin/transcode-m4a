@@ -18,4 +18,4 @@ done
 
 shift $((OPTIND-1))
 
-find "$*" -iname '*.mkv' -print0 | xargs -0 -n1 find-hevc | xargs -0 -n1 ${COMMAND}
+find "$*" -iname '*.m4a' -print0 | xargs -0 -n1 ${COMMAND}

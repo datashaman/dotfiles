@@ -86,11 +86,12 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim="vim --servername datashaman"
 alias vi="vim --servername datashaman"
+alias doodle="docker run -v samples:/nd/samples -v frame:/nd/frame -it alexjc/neural-doodle"
 
 . $HOME/.vim/plugged/powerline/powerline/bindings/zsh/powerline.zsh
 . $HOME/.autoenv/activate.sh
 
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:node_modules/.bin:vendor/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.config/composer/vendor/bin:node_modules/.bin:vendor/bin:/snap/bin:$PATH
 
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
@@ -103,3 +104,6 @@ export NVM_DIR="/home/marlinf/.nvm"
 
 # added by Anaconda3 4.4.0 installer
 # export PATH="/home/marlinf/anaconda3/bin:$PATH"
+
+# added by travis gem
+[ -f /home/marlinf/.travis/travis.sh ] && source /home/marlinf/.travis/travis.sh

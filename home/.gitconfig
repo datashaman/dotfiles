@@ -27,6 +27,7 @@
     outgoing     = !git-whatchanged origin..
     pf           = push --force-with-lease
     pud          = push -u datashaman
+    ram          = rebase origin/master
     rim          = rebase -i origin/master
     rup          = remote update -p
     sa           = status -sb --ignore-submodules=untracked

@@ -165,3 +165,6 @@ export PATH=$HOME/.config/composer/vendor/bin:$PATH
 # export PATH="/home/marlinf/anaconda3/bin:$PATH"
 
 . $HOME/.autoenv/activate.sh
+
+# added by travis gem
+[ -f /home/marlinf/.travis/travis.sh ] && source /home/marlinf/.travis/travis.sh
