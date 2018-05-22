@@ -149,22 +149,15 @@ export TODOTXT_DEFAULT_ACTION=ls
 complete -F _todo t
 
 export EDITOR=vim
-export ANDROID_SDK_ROOT=/opt/android-sdk-linux
-export ANDROID_NDK_ROOT=/opt/android-ndk-r10
-export PATH="$HOME/.rbenv/bin:$HOME/bin:vendor/bin:node_modules/.bin:$PATH"
+export PATH="$HOME/bin:vendor/bin:node_modules/.bin:$PATH"
 
 # export HAXE_STD_PATH=/opt/haxe/std
-
-eval "$(rbenv init -)"
-source ~/.nvm/nvm.sh
 
 xset s noexpose
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
 
-# added by Anaconda3 4.4.0 installer
-# export PATH="/home/marlinf/anaconda3/bin:$PATH"
-
 . $HOME/.autoenv/activate.sh
+. $HOME/.sd
 
 # added by travis gem
 [ -f /home/marlinf/.travis/travis.sh ] && source /home/marlinf/.travis/travis.sh
