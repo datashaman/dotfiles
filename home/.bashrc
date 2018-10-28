@@ -149,7 +149,7 @@ export TODOTXT_DEFAULT_ACTION=ls
 complete -F _todo t
 
 export EDITOR=vim
-export PATH="$HOME/bin:vendor/bin:node_modules/.bin:$PATH"
+export PATH="$HOME/bin:$PATH:$HOME/.local/bin:vendor/bin:node_modules/.bin"
 
 # export HAXE_STD_PATH=/opt/haxe/std
 
@@ -161,3 +161,7 @@ export PATH=$HOME/.config/composer/vendor/bin:$PATH
 
 # added by travis gem
 [ -f /home/marlinf/.travis/travis.sh ] && source /home/marlinf/.travis/travis.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

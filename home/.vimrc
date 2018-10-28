@@ -3,7 +3,7 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 Plug 'frankier/vim-eve'
 Plug 'vim-scripts/pylint.vim'
 " Plug 'scrooloose/nerdtree'
@@ -32,9 +32,15 @@ Plug 'vim-syntastic/syntastic'
 Plug 'xsbeats/vim-blade'
 Plug 'ardagnir/united-front'
 Plug 'editorconfig/editorconfig-vim'
-" Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 " Plug 'raichoo/purescript-vim'
-Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plug 'vim-airline/vim-airline'
+Plug 'tmhedberg/SimpylFold'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'nvie/vim-flake8'
+Plug 'jnurmine/Zenburn'
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
@@ -54,6 +60,7 @@ let g:dbgPavimBreakAtEntry=0
 set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+set nu
 
 set mouse=a
 " set cursorline cursorcolumn
@@ -86,8 +93,13 @@ set nobackup
 set noswapfile
 
 if &t_Co >= 256 || has("gui_running")
-	colorscheme desert
+    set background=dark
+    colorscheme solarized
+else
+    colorscheme zenburn
 endif
+
+call togglebg#map("<F5>")
 
 if &t_Co > 2 || has("gui_running")
 	" switch syntax highlighting on, when the terminal has colors
@@ -121,3 +133,31 @@ nmap <F10>  :TrinityToggleTagList<CR>
 
 " Open and close the NERD_tree.vim separately 
 nmap <F11>  :TrinityToggleNERDTree<CR> 
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+" Python settings
+let python_highlight_all=1
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+" Whitespace violations
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" Character encoding
+set encoding=utf-8
+
+" YouCompleteMe customization
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
